@@ -1,2 +1,2 @@
 # Docker-Familiarization
-Repo for familiarizing Docker
+This Repo is used for familiarizing Docker in detail
