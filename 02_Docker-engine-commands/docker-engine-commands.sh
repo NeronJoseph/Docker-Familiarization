@@ -38,3 +38,21 @@ docker container run --name test-container -d httpd
 
 # Reattach to the test container that we created earlier 
 docker container attach test-container 
+
+# Get the detailed information about a container named test-container 
+docker container inspect test-container 
+
+# Get the details of the usage of Memory, CPU, Network, IO etc 
+docker container stats 
+
+# Get the list of processes and process ids of the container for inspection 
+docker container top test-container
+
+# To get the logs of container. These are logs that are getting written to the stdout from the processes inside the container 
+docker container logs test-container 
+
+# To stream the logs of a container 
+docker container logs -f test-container 
+
+# To get the system events of docker
+docker system events --since 60m 
